@@ -1,0 +1,360 @@
+{
+  "2026-09-28": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "B?LL",
+        "word2": "?PPLE",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "B?S",
+        "answer": "U"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "D?G",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "R?D",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "P?G",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "N?T",
+        "answer": "U"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "MO?N",
+        "word2": "?WL",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "ST?R",
+        "word2": "?NT",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "W?TER",
+        "word2": "BE?CH",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "CL?CK",
+        "word2": "?CEAN",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "HO?SE",
+        "word2": "?NDER",
+        "answer": "U"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "TIG?R",
+        "word2": "?AGLE",
+        "answer": "E"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "LEM?N",
+        "word2": "?RANGE",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "GAR?EN",
+        "word2": "?RAGON",
+        "answer": "D"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "CAS?LE",
+        "word2": "?IGER",
+        "answer": "T"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "FOR?ST",
+        "word2": "?ARTH",
+        "answer": "E"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "BRI?GE",
+        "word2": "?ANCE",
+        "answer": "D"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "MIR?OR",
+        "word2": "?IVER",
+        "answer": "R"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CRY?TAL",
+        "word2": "?TORM",
+        "answer": "S"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "JAC?ET",
+        "word2": "?NIFE",
+        "answer": "K"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "PO?KET",
+        "word2": "?ASTLE",
+        "answer": "C"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CA?ERA",
+        "word2": "?AGIC",
+        "answer": "M"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "BU?TON",
+        "word2": "?ABLE",
+        "answer": "T"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SIL?ER",
+        "word2": "?ALLEY",
+        "answer": "V"
+      },
+      {
+        "round": 25,
+        "difficulty": "super_tough",
+        "word1": "KNOW?EDGE",
+        "word2": "?ABYRINTH",
+        "answer": "L"
+      }
+    ]
+  },
+  "2026-09-29": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "R?D",
+        "answer": "E"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "P?G",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "N?T",
+        "answer": "U"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "MO?N",
+        "word2": "?WL",
+        "answer": "O"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "ST?R",
+        "word2": "?NT",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?LL",
+        "word2": "?PPLE",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "B?S",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "D?G",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "TIG?R",
+        "word2": "?AGLE",
+        "answer": "E"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "LEM?N",
+        "word2": "?RANGE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "GAR?EN",
+        "word2": "?RAGON",
+        "answer": "D"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "CAS?LE",
+        "word2": "?IGER",
+        "answer": "T"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "FOR?ST",
+        "word2": "?ARTH",
+        "answer": "E"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "W?TER",
+        "word2": "BE?CH",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "CL?CK",
+        "word2": "?CEAN",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "HO?SE",
+        "word2": "?NDER",
+        "answer": "U"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "JAC?ET",
+        "word2": "?NIFE",
+        "answer": "K"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "PO?KET",
+        "word2": "?ASTLE",
+        "answer": "C"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CA?ERA",
+        "word2": "?AGIC",
+        "answer": "M"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "BU?TON",
+        "word2": "?ABLE",
+        "answer": "T"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SIL?ER",
+        "word2": "?ALLEY",
+        "answer": "V"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "BRI?GE",
+        "word2": "?ANCE",
+        "answer": "D"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "MIR?OR",
+        "word2": "?IVER",
+        "answer": "R"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CRY?TAL",
+        "word2": "?TORM",
+        "answer": "S"
+      },
+      {
+        "round": 25,
+        "difficulty": "super_tough",
+        "word1": "KNOW?EDGE",
+        "word2": "?ABYRINTH",
+        "answer": "L"
+      }
+    ]
+  }
+}

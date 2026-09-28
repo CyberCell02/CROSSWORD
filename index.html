@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cross</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FIREBASE (Google Sign-In + Firestore leaderboard) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+        import {
+            getAuth,
+            GoogleAuthProvider,
+            signInWithPopup,
+            signInAnonymously,
+            linkWithPopup,
+            signOut,
+            onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+        import {
+            getFirestore,
+            doc,
+            getDoc,
+            setDoc,
+            deleteDoc,
+            serverTimestamp,
+            collection,
+            query,
+            where,
+            orderBy,
+            limit,
+            getDocs,
+            getCountFromServer,
+            runTransaction
+        } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDb2jJlYplWdEoccbh9Q5ArGlBFsot6wLY",
+            authDomain: "crossword-85195.firebaseapp.com",
+            projectId: "crossword-85195",
+            storageBucket: "crossword-85195.firebasestorage.app",
+            messagingSenderId: "420803776820",
+            appId: "1:420803776820:web:7f94a95de48a4c26421561",
+            measurementId: "G-JN1RH6VD0C"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const provider = new GoogleAuthProvider();
+
+        // script.js is a classic (non-module) script, so it can't use these
+        // imports directly. We expose everything it needs on window instead.
+        window.WordCrossFirebase = {
+
+            signIn: () => signInWithPopup(auth, provider),
+
+            signInGuest: () => signInAnonymously(auth),
+
+            // Upgrades a guest session to Google, keeping the same uid so
+            // bestScore/bestStreak/leaderboard position carry over untouched.
+            linkGuestToGoogle: () => linkWithPopup(auth.currentUser, provider),
+
+            signOutUser: () => signOut(auth),
+
+            onAuthChange: (callback) => onAuthStateChanged(auth, callback),
+
+            getUserDoc: async (uid) => {
+                const ref = doc(db, "users", uid);
+                const snap = await getDoc(ref);
+                return snap.exists() ? snap.data() : null;
+            },
+
+            // ------------------------------------------------------------
+            // GLOBAL USERNAME REGISTRY
+            // Collection: usernames/{normalizedUsername}
+            // Doc fields: { uid, displayName, claimedAt }
+            // ONE normalized name → ONE account, across Google + Guest + any
+            // future auth method sharing this database.
+            // ------------------------------------------------------------
+
+            // Normalize for uniqueness: trim, collapse internal whitespace,
+            // lowercase. Display name is stored separately, unchanged.
+            normalizeUsername: (raw) => {
+                return String(raw || "")
+                    .trim()
+                    .replace(/\s+/g, " ")
+                    .toLowerCase();
+            },
+
+            // True if the name is free, or already owned by excludeUid.
+            // Checks BOTH the usernames registry AND the users collection
+            // (covers legacy accounts that never wrote a registry doc).
+            // On network/db failure this THROWS — callers must not treat
+            // failure as "available".
+            isUsernameAvailable: async (rawName, excludeUid) => {
+                const normalized = window.WordCrossFirebase.normalizeUsername(rawName);
+                if (!normalized) return false;
+
+                // 1) Global registry
+                const regRef = doc(db, "usernames", normalized);
+                const regSnap = await getDoc(regRef);
+                if (regSnap.exists()) {
+                    const owner = regSnap.data().uid;
+                    if (owner && owner !== excludeUid) return false;
+                }
+
+                // 2) Any other user doc already carrying this normalized name
+                const normQ = query(
+                    collection(db, "users"),
+                    where("usernameNormalized", "==", normalized),
+                    limit(10)
+                );
+                const normSnap = await getDocs(normQ);
+                let takenByOther = false;
+                normSnap.forEach((d) => {
+                    if (d.id !== excludeUid) takenByOther = true;
+                });
+                if (takenByOther) return false;
+
+                // 3) Legacy display-name match (pre-normalization field). Firestore
+                // equality is case-sensitive, so probe common casings.
+                const display = String(rawName || "").trim().replace(/\s+/g, " ");
+                if (display) {
+                    const variants = new Set([
+                        display,
+                        display.toLowerCase(),
+                        display.toUpperCase(),
+                        display.charAt(0).toUpperCase() + display.slice(1).toLowerCase()
+                    ]);
+                    for (const variant of variants) {
+                        if (takenByOther) break;
+                        const legQ = query(
+                            collection(db, "users"),
+                            where("username", "==", variant),
+                            limit(10)
+                        );
+                        const legSnap = await getDocs(legQ);
+                        legSnap.forEach((d) => {
+                            if (d.id !== excludeUid) takenByOther = true;
+                        });
+                    }
+                }
+                if (takenByOther) return false;
+
+                return true;
+            },
+
+            // Atomically claim a username for uid and write it onto the user
+            // doc. Uses a Firestore transaction so two clients cannot both
+            // succeed for the same normalized name.
+            // Also rejects if another users/{uid} already has this name
+            // (legacy rows without a registry entry).
+            // Throws { code: "taken" } | { code: "invalid" } | network errors.
+            // Does NOT reset bestScore/bestStreak/playtime (safe for renames).
+            claimUsername: async (uid, displayName) => {
+                const trimmed = String(displayName || "").trim().replace(/\s+/g, " ");
+                const normalized = window.WordCrossFirebase.normalizeUsername(trimmed);
+                if (!normalized || normalized.length < 1 || trimmed.length > 16) {
+                    const err = new Error("Invalid username");
+                    err.code = "invalid";
+                    throw err;
+                }
+
+                // Hard pre-check against users collection (legacy + concurrent).
+                // Throws on network failure rather than assuming free.
+                const available = await window.WordCrossFirebase.isUsernameAvailable(trimmed, uid);
+                if (!available) {
+                    const err = new Error("Username already taken");
+                    err.code = "taken";
+                    throw err;
+                }
+
+                const unameRef = doc(db, "usernames", normalized);
+                const userRef = doc(db, "users", uid);
+
+                try {
+                    await runTransaction(db, async (transaction) => {
+                        // ALL reads first (Firestore transaction rule).
+                        const unameSnap = await transaction.get(unameRef);
+                        const userSnap = await transaction.get(userRef);
+
+                        if (unameSnap.exists()) {
+                            const owner = unameSnap.data().uid;
+                            if (owner && owner !== uid) {
+                                const err = new Error("Username already taken");
+                                err.code = "taken";
+                                throw err;
+                            }
+                        }
+
+                        const oldDisplay = userSnap.exists() ? (userSnap.data().username || null) : null;
+                        const oldNormalized = oldDisplay
+                            ? window.WordCrossFirebase.normalizeUsername(oldDisplay)
+                            : null;
+
+                        let oldUnameSnap = null;
+                        let oldUnameRef = null;
+                        if (oldNormalized && oldNormalized !== normalized) {
+                            oldUnameRef = doc(db, "usernames", oldNormalized);
+                            oldUnameSnap = await transaction.get(oldUnameRef);
+                        }
+
+                        transaction.set(unameRef, {
+                            uid: uid,
+                            displayName: trimmed,
+                            claimedAt: serverTimestamp()
+                        });
+
+                        const userUpdates = {
+                            username: trimmed,
+                            usernameNormalized: normalized,
+                            updatedAt: serverTimestamp()
+                        };
+                        if (!userSnap.exists()) {
+                            userUpdates.bestScore = 0;
+                            userUpdates.bestStreak = 0;
+                            userUpdates.playtimeSeconds = 0;
+                            userUpdates.createdAt = serverTimestamp();
+                        }
+                        transaction.set(userRef, userUpdates, { merge: true });
+
+                        if (oldUnameRef && oldUnameSnap && oldUnameSnap.exists()) {
+                            const oldOwner = oldUnameSnap.data().uid;
+                            if (oldOwner === uid) {
+                                transaction.delete(oldUnameRef);
+                            }
+                        }
+                    });
+                } catch (err) {
+                    // Surface permission errors clearly so missing Firestore
+                    // rules for `usernames` are obvious during testing.
+                    if (err && (err.code === "permission-denied" || err.code === "permissions-denied")) {
+                        const e = new Error("Username registry permission denied. Update Firestore rules for the usernames collection.");
+                        e.code = "permission-denied";
+                        throw e;
+                    }
+                    throw err;
+                }
+
+                // Post-verify: registry must list this uid (detect silent rule failures).
+                try {
+                    const verify = await getDoc(unameRef);
+                    if (!verify.exists() || verify.data().uid !== uid) {
+                        const e = new Error("Username claim could not be verified");
+                        e.code = "verify-failed";
+                        throw e;
+                    }
+                } catch (err) {
+                    if (err && err.code === "verify-failed") throw err;
+                    // Read failure after write — still treat as failure to be safe.
+                    const e = new Error("Username claim could not be verified");
+                    e.code = "verify-failed";
+                    throw e;
+                }
+
+                return { username: trimmed, normalized: normalized };
+            },
+
+            // On login: confirm this account is allowed to keep its current
+            // display name. Returns { ok: true } or { ok: false, reason }.
+            // If the name is free, registers it. If another account owns it
+            // (registry or users collection), returns ok:false so the client
+            // can force a rename — does NOT delete or rewrite other accounts.
+            resolveUsernameOwnership: async (uid, displayName) => {
+                const trimmed = String(displayName || "").trim();
+                if (!trimmed) return { ok: false, reason: "empty" };
+                const normalized = window.WordCrossFirebase.normalizeUsername(trimmed);
+                if (!normalized) return { ok: false, reason: "empty" };
+
+                try {
+                    const available = await window.WordCrossFirebase.isUsernameAvailable(trimmed, uid);
+                    if (!available) {
+                        return { ok: false, reason: "taken" };
+                    }
+
+                    // Name is free for this uid — ensure registry + normalized field.
+                    const unameRef = doc(db, "usernames", normalized);
+                    const userRef = doc(db, "users", uid);
+                    await runTransaction(db, async (transaction) => {
+                        const snap = await transaction.get(unameRef);
+                        if (!snap.exists()) {
+                            transaction.set(unameRef, {
+                                uid: uid,
+                                displayName: trimmed,
+                                claimedAt: serverTimestamp()
+                            });
+                        } else if (snap.data().uid && snap.data().uid !== uid) {
+                            const err = new Error("Username already taken");
+                            err.code = "taken";
+                            throw err;
+                        }
+                        transaction.set(userRef, {
+                            username: trimmed,
+                            usernameNormalized: normalized,
+                            updatedAt: serverTimestamp()
+                        }, { merge: true });
+                    });
+                    return { ok: true };
+                } catch (err) {
+                    if (err && err.code === "taken") {
+                        return { ok: false, reason: "taken" };
+                    }
+                    console.error("resolveUsernameOwnership failed:", err);
+                    // On permission/network errors, do not silently keep a
+                    // potentially-duplicate name — ask the user to re-pick.
+                    return { ok: false, reason: "error", error: err };
+                }
+            },
+
+            // Soft-clear username on THIS user only (used when a duplicate is
+            // detected on login). Does not touch the registry owner or any
+            // other account's data.
+            clearUsername: async (uid) => {
+                const userRef = doc(db, "users", uid);
+                await setDoc(userRef, {
+                    username: null,
+                    usernameNormalized: null,
+                    updatedAt: serverTimestamp()
+                }, { merge: true });
+            },
+
+            // Legacy alias
+            setUsername: async (uid, username) => {
+                return window.WordCrossFirebase.claimUsername(uid, username);
+            },
+
+            // Only ever raises bestScore/bestStreak, never lowers them.
+            // Crucially, the "achieved at" timestamps (scoreAchievedAt /
+            // streakAchievedAt) are only ever re-stamped when a run actually
+            // sets a NEW best. That's what lets ties on the leaderboard
+            // resolve consistently: whoever reached a given score/streak
+            // first stays ranked above someone who merely matches it later,
+            // instead of the order reshuffling every time a tie occurs.
+            submitResult: async (uid, score, streak) => {
+                const ref = doc(db, "users", uid);
+                const snap = await getDoc(ref);
+                const existing = snap.exists() ? snap.data() : {};
+                const prevBestScore = existing.bestScore || 0;
+                const prevBestStreak = existing.bestStreak || 0;
+                const newBestScore = Math.max(prevBestScore, score);
+                const newBestStreak = Math.max(prevBestStreak, streak);
+
+                const updates = {
+                    bestScore: newBestScore,
+                    bestStreak: newBestStreak,
+                    updatedAt: serverTimestamp()
+                };
+                if (newBestScore > prevBestScore) {
+                    updates.scoreAchievedAt = serverTimestamp();
+                }
+                if (newBestStreak > prevBestStreak) {
+                    updates.streakAchievedAt = serverTimestamp();
+                }
+
+                await setDoc(ref, updates, { merge: true });
+                return { bestScore: newBestScore, bestStreak: newBestStreak };
+            },
+
+            // Ordered by bestScore desc (Firestore does this natively, no
+            // extra index needed). Ties on bestScore are then broken on the
+            // client by scoreAchievedAt — whoever got there first stays
+            // first. Sorting client-side (instead of a second orderBy on
+            // scoreAchievedAt) avoids two problems: it needs no Firestore
+            // composite index, and it doesn't silently drop players who
+            // don't have a scoreAchievedAt field yet (anyone who hasn't set
+            // a new best since this field was introduced).
+            getTopScores: async (n) => {
+                const q = query(
+                    collection(db, "users"),
+                    orderBy("bestScore", "desc"),
+                    limit(n)
+                );
+                const snap = await getDocs(q);
+                const rows = [];
+                snap.forEach((docSnap) => {
+                    const d = docSnap.data();
+                    rows.push({
+                        uid: docSnap.id,
+                        username: d.username || "Anonymous",
+                        value: d.bestScore || 0,
+                        achievedAt: d.scoreAchievedAt ? d.scoreAchievedAt.toMillis() : null,
+                        equippedAchievementIcons: Array.isArray(d.equippedAchievementIcons)
+                            ? d.equippedAchievementIcons.slice(0, 3)
+                            : []
+                    });
+                });
+                rows.sort((a, b) => {
+                    if (b.value !== a.value) return b.value - a.value;
+                    const aT = a.achievedAt === null ? Infinity : a.achievedAt;
+                    const bT = b.achievedAt === null ? Infinity : b.achievedAt;
+                    return aT - bT;
+                });
+                return rows;
+            },
+
+            // Same idea as getTopScores, but for best streaks.
+            getTopStreaks: async (n) => {
+                const q = query(
+                    collection(db, "users"),
+                    orderBy("bestStreak", "desc"),
+                    limit(n)
+                );
+                const snap = await getDocs(q);
+                const rows = [];
+                snap.forEach((docSnap) => {
+                    const d = docSnap.data();
+                    rows.push({
+                        uid: docSnap.id,
+                        username: d.username || "Anonymous",
+                        value: d.bestStreak || 0,
+                        achievedAt: d.streakAchievedAt ? d.streakAchievedAt.toMillis() : null,
+                        equippedAchievementIcons: Array.isArray(d.equippedAchievementIcons)
+                            ? d.equippedAchievementIcons.slice(0, 3)
+                            : []
+                    });
+                });
+                rows.sort((a, b) => {
+                    if (b.value !== a.value) return b.value - a.value;
+                    const aT = a.achievedAt === null ? Infinity : a.achievedAt;
+                    const bT = b.achievedAt === null ? Infinity : b.achievedAt;
+                    return aT - bT;
+                });
+                return rows;
+            },
+
+            // Time Played leaderboard — ranks by total accumulated playtime
+            // (seconds). No tie-breaker timestamp needed; pure duration order.
+            // Includes equippedAchievementIcons so every leaderboard can
+            // render the same player-name + icons component.
+            getTopPlaytimes: async (n) => {
+                const q = query(
+                    collection(db, "users"),
+                    orderBy("playtimeSeconds", "desc"),
+                    limit(n)
+                );
+                const snap = await getDocs(q);
+                const rows = [];
+                snap.forEach((docSnap) => {
+                    const d = docSnap.data();
+                    rows.push({
+                        uid: docSnap.id,
+                        username: d.username || "Anonymous",
+                        value: d.playtimeSeconds || 0,
+                        equippedAchievementIcons: Array.isArray(d.equippedAchievementIcons)
+                            ? d.equippedAchievementIcons.slice(0, 3)
+                            : []
+                    });
+                });
+                rows.sort((a, b) => b.value - a.value);
+                return rows;
+            },
+
+            // Playtime is tracked separately from Streak and never touches
+            // bestScore/bestStreak. It's a simple running total in seconds,
+            // saved as an absolute value (not incremented server-side)
+            // because only one session is ever actively counting at a time
+            // on a given account. merge:true keeps every other field intact.
+            savePlaytime: async (uid, totalPlaytimeSeconds) => {
+                const ref = doc(db, "users", uid);
+                await setDoc(ref, {
+                    playtimeSeconds: totalPlaytimeSeconds,
+                    updatedAt: serverTimestamp()
+                }, { merge: true });
+            },
+
+            // Equipped achievement icon ids (max 3). merge:true so existing
+            // accounts without this field are never reset or overwritten.
+            saveEquippedIcons: async (uid, iconIds) => {
+                const ref = doc(db, "users", uid);
+                await setDoc(ref, {
+                    equippedAchievementIcons: Array.isArray(iconIds) ? iconIds.slice(0, 3) : [],
+                    updatedAt: serverTimestamp()
+                }, { merge: true });
+            },
+
+            // Lifetime achievement counters (words, rounds, wrongs, hints…).
+            // Absolute values; merge keeps score/streak/playtime intact.
+            saveLifetimeStats: async (uid, stats) => {
+                const ref = doc(db, "users", uid);
+                await setDoc(ref, {
+                    lifetimeStats: stats && typeof stats === "object" ? stats : {},
+                    updatedAt: serverTimestamp()
+                }, { merge: true });
+            },
+
+            // Daily Rush leaderboard reads the existing per-user `dailyRush` run
+            // state. This deliberately reuses the same user document and does not
+            // create a second Daily Rush result/account system.
+            getTopDailyRush: async (dateKey, n) => {
+                const snap = await getDocs(collection(db, "users"));
+                const now = Date.now();
+                const rows = [];
+
+                snap.forEach((docSnap) => {
+                    const d = docSnap.data();
+                    const state = d.dailyRush;
+                    if (!state || state.date !== dateKey) return;
+
+                    const completedRounds = Math.max(
+                        0,
+                        Math.min(25, Math.floor(Number(state.completedRounds) || 0))
+                    );
+                    const startedAt = Number(state.startedAt);
+                    if (!Number.isFinite(startedAt) || startedAt <= 0) return;
+
+                    let finishedAt = Number(state.finishedAt);
+                    if (!Number.isFinite(finishedAt) || finishedAt < startedAt) {
+                        finishedAt = null;
+                    }
+
+                    const endAt = finishedAt !== null ? finishedAt : now;
+                    const timeMs = Math.max(0, endAt - startedAt);
+
+                    rows.push({
+                        uid: docSnap.id,
+                        username: d.username || "Anonymous",
+                        rounds: completedRounds,
+                        timeMs: timeMs,
+                        finished: finishedAt !== null,
+                        equippedAchievementIcons: Array.isArray(d.equippedAchievementIcons)
+                            ? d.equippedAchievementIcons.slice(0, 3)
+                            : []
+                    });
+                });
+
+                // Required ranking: most rounds first, then lowest time.
+                rows.sort((a, b) => {
+                    if (b.rounds !== a.rounds) return b.rounds - a.rounds;
+                    return a.timeMs - b.timeMs;
+                });
+
+                return rows.slice(0, Math.max(1, Number(n) || 100));
+            },
+
+            // Daily Rush run state for the current date (startedAt, completedRounds,
+            // finishedAt…). Stored on the user doc as `dailyRush`; merge:true keeps
+            // every other field (score, streak, playtime, stats) untouched.
+            saveDailyRushState: async (uid, state) => {
+                const ref = doc(db, "users", uid);
+                await setDoc(ref, {
+                    dailyRush: state && typeof state === "object" ? state : null,
+                    updatedAt: serverTimestamp()
+                }, { merge: true });
+            },
+
+            // Rank = position in the SAME order getTopScores/getTopStreaks/
+            // getTopPlaytimes renders: everyone with a strictly better value,
+            // PLUS everyone tied on value who got there earlier, + 1.
+            // mode is "score", "streak", or "playtime"; myAchievedAtMillis is
+            // that field's timestamp in epoch millis (or null if never set /
+            // not used for playtime).
+            // Queries use only a single filter field each so no composite
+            // Firestore index is required.
+            getMyRank: async (mode, myValue, myAchievedAtMillis) => {
+                let field, achievedField;
+                if (mode === "streak") {
+                    field = "bestStreak";
+                    achievedField = "streakAchievedAt";
+                } else if (mode === "playtime") {
+                    field = "playtimeSeconds";
+                    achievedField = null; // no timestamp tie-break for playtime
+                } else {
+                    field = "bestScore";
+                    achievedField = "scoreAchievedAt";
+                }
+
+                const higherQ = query(collection(db, "users"), where(field, ">", myValue));
+                const higherSnap = await getCountFromServer(higherQ);
+                let count = higherSnap.data().count;
+
+                // Skip the tie check at 0 — that's the default for every
+                // profile ever created, so the "tied" set there can be
+                // enormous and isn't meaningful for ranking purposes.
+                // Playtime has no achievedAt; ties share the same rank band
+                // (order among exact equals is stable but not time-based).
+                if (myValue > 0 && achievedField) {
+                    const tiedQ = query(collection(db, "users"), where(field, "==", myValue));
+                    const tiedSnap = await getDocs(tiedQ);
+                    const myMillis = (myAchievedAtMillis === null || myAchievedAtMillis === undefined)
+                        ? Infinity
+                        : myAchievedAtMillis;
+                    tiedSnap.forEach((docSnap) => {
+                        const ts = docSnap.data()[achievedField];
+                        const otherMillis = ts ? ts.toMillis() : Infinity;
+                        if (otherMillis < myMillis) {
+                            count++;
+                        }
+                    });
+                }
+
+                return count + 1;
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- ACHIEVEMENT UNLOCK TOAST (shown over any screen) -->
+        <div id="achievementToast" class="achievement-toast">
+            <img id="achievementToastIcon" class="achievement-toast-icon" src="" alt="">
+            <div class="achievement-toast-text">
+                <span class="achievement-toast-label">Achievement Unlocked!</span>
+                <span id="achievementToastName" class="achievement-toast-name">—</span>
+            </div>
+        </div>
+
+        <!-- HOME SCREEN -->
+        <div id="screen-home" class="screen active">
+            <h1 class="app-title">Word Cross</h1>
+            <p class="app-subtitle">Find the missing letter to complete the cross</p>
+
+            <!-- Account / Sign-in is handled by the welcome overlay + Profile tab now. -->
+            <!-- Best Score / Best Streak cards removed from Home — still visible on Profile. -->
+
+            <!-- Primary Play Button with SVG Icon -->
+            <button id="startPlayBtn" class="btn btn-primary btn-play">
+                <img src="assets/play.svg" alt="Play" class="play-svg-icon">
+                PLAY GAME
+            </button>
+
+            <!-- Daily Rush Card -->
+            <div id="dailyRushBtn" class="card mode-card green-card">
+                <div class="card-icon">⚡</div>
+                <h2>Daily Rush</h2>
+                <p>Timed daily challenge with bonus multiplier rewards.</p>
+                <button class="btn btn-secondary">⚡ Play Daily Rush</button>
+            </div>
+        </div>
+
+        <!-- GAME SCREEN -->
+        <div id="screen-game" class="screen">
+            <div class="game-header">
+                <button id="gameHomeBtn" class="icon-btn">‹</button>
+
+                <div id="round" class="header-badge round-badge">Round 1</div>
+
+                <div class="header-badge score-badge">
+                    <span class="score-label">SCORE</span>
+                    <span id="score" class="score-number">0</span>
+                </div>
+            </div>
+
+            <div class="status-row">
+                <div id="lives" class="lives-container"></div>
+                <div id="streakDisplay" class="streak-display">🔥 0</div>
+            </div>
+
+            <div id="board" class="board"></div>
+
+            <div class="input-container">
+                <button id="hintBtn" class="btn btn-hint" title="Hint">💡</button>
+                <input type="text" id="answer" maxlength="1" placeholder="?" autocomplete="off">
+                <button id="submit" class="btn btn-submit">CHECK ✓</button>
+            </div>
+            <div id="hintNote" class="hint-note"></div>
+
+            <div id="message" class="message-banner"></div>
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- ACHIEVEMENTS SCREEN -->
+        <div id="screen-achievements" class="screen">
+            <div class="subscreen-header">
+                <h2>Achievements</h2>
+            </div>
+            <div id="achievementsProgressSummary" class="achievements-progress-summary"></div>
+            <div id="achievementsGrid" class="achievements-grid"></div>
+        </div>
+
+        <!-- LEADERBOARD SCREEN -->
+        <div id="screen-leaderboard" class="screen">
+            <div class="subscreen-header">
+                <h2>Leaderboard</h2>
+            </div>
+            <div class="leaderboard-toggle">
+                <button id="lbToggleScore" class="toggle-btn active" data-mode="score">🏆 Score</button>
+                <button id="lbToggleStreak" class="toggle-btn" data-mode="streak">🔥 Streak</button>
+                <button id="lbTogglePlaytime" class="toggle-btn" data-mode="playtime">⏱ Time</button>
+                <button id="lbToggleDailyRush" class="toggle-btn" data-mode="dailyRush">⚡ Rush</button>
+            </div>
+            <div id="leaderboardList" class="leaderboard-list">
+                <p class="leaderboard-status">Sign in to see the leaderboard.</p>
+            </div>
+            <div id="myRankRow" class="my-rank-row" style="display:none;"></div>
+        </div>
+
+        <!-- PROFILE SCREEN -->
+        <div id="screen-profile" class="screen">
+            <div class="subscreen-header">
+                <h2>Profile</h2>
+            </div>
+
+            <div class="profile-card">
+                <div id="profileAvatar" class="profile-avatar">?</div>
+                <div class="profile-name-row">
+                    <span id="profileUsername" class="profile-username">—</span>
+                    <button id="editUsernameBtn" class="icon-btn small" title="Edit username">✎</button>
+                </div>
+                <span id="profileAccountType" class="account-type-tag">—</span>
+            </div>
+
+            <div class="profile-stats-row">
+                <div class="card score-card profile-stat">
+                    <span class="card-label">BEST SCORE</span>
+                    <span id="profileBestScore" class="score-value">0</span>
+                </div>
+                <div class="card streak-card profile-stat">
+                    <span class="card-label">BEST STREAK</span>
+                    <span id="profileBestStreak" class="score-value">🔥 0</span>
+                </div>
+            </div>
+
+            <!-- Playtime is a separate stat from Streak/Score: its own
+                 variable, its own saved field, its own card. -->
+            <div class="card playtime-card">
+                <span class="card-label">PLAYTIME</span>
+                <span id="profilePlaytime" class="score-value">0s</span>
+            </div>
+
+            <div id="profileGuestUpsell" class="card mode-card guest-upsell-card" style="display:none;">
+                <div class="card-icon">☁️</div>
+                <h2>Save Your Progress</h2>
+                <p>You're playing as a guest. Link a Google account so your scores and streak are never lost.</p>
+                <button id="linkGoogleBtn" class="btn btn-secondary">Link Google Account</button>
+            </div>
+
+            <!-- Equipped achievement icons (max 3). Persisted on the user doc. -->
+            <div id="profileEquippedSection" class="profile-equipped-section" style="display:none;">
+                <h3 class="profile-section-title">Equipped Icons</h3>
+                <p class="profile-section-hint">Choose up to 3 unlocked achievement icons to display.</p>
+                <div id="profileEquippedSlots" class="equipped-slots"></div>
+                <div id="profileIconPicker" class="equip-icon-picker"></div>
+            </div>
+
+            <div id="profileMessage" class="message-banner"></div>
+
+            <button id="profileSignOutBtn" class="btn btn-guest profile-signout-btn">Sign Out</button>
+        </div>
+
+        <!-- DAILY RUSH SCREEN -->
+        <div id="screen-daily-rush" class="screen">
+            <div class="subscreen-header">
+                <h2>⚡ Daily Rush</h2>
+            </div>
+
+            <!-- Loading / intro / error / not-available / completed states (filled by script.js) -->
+            <div id="drStatus" class="empty-state"></div>
+
+            <!-- Active run (no hint button, by design) -->
+            <div id="drGame" class="dr-game" style="display:none;">
+                <div class="game-header">
+                    <button id="drBackBtn" class="icon-btn" title="Back to Home">‹</button>
+                    <div id="drRound" class="header-badge round-badge">Round 1 / 25</div>
+                    <div class="header-badge score-badge">
+                        <span class="score-label">TIME</span>
+                        <span id="drTimer" class="score-number">0:00</span>
+                    </div>
+                </div>
+
+                <div class="dr-difficulty-row">
+                    <span id="drDifficulty" class="dr-difficulty easy">EASY</span>
+                </div>
+
+                <div id="drBoard" class="board"></div>
+                <div id="drWords" class="dr-words"></div>
+
+                <div class="input-container">
+                    <input type="text" id="drAnswer" maxlength="1" placeholder="?" autocomplete="off"
+                        autocapitalize="characters" spellcheck="false">
+                    <button id="drSubmit" class="btn btn-submit">CHECK ✓</button>
+                </div>
+
+                <div id="drMessage" class="message-banner"></div>
+                <div class="progress-bar">
+                    <div id="drProgress" class="progress-fill"></div>
+                </div>
+                <div id="drProgressLabel" class="dr-progress-label">0 / 25 complete</div>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAVIGATION BAR -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-screen="home">
+                <img src="assets/house.svg" alt="Home" class="nav-svg-icon">
+                <span class="nav-label">Home</span>
+            </button>
+            <button class="nav-item" data-screen="achievements">
+                <img src="assets/trophy.svg" alt="Achievements" class="nav-svg-icon">
+                <span class="nav-label">Badges</span>
+            </button>
+            <button class="nav-item" data-screen="leaderboard">
+                <img src="assets/podium.svg" alt="Leaderboard" class="nav-svg-icon">
+                <span class="nav-label">Ranks</span>
+            </button>
+            <button class="nav-item" data-screen="profile">
+                <img src="assets/users.svg" alt="Profile" class="nav-svg-icon">
+                <span class="nav-label">Profile</span>
+            </button>
+        </nav>
+
+        <!-- WELCOME / SIGN-IN OVERLAY (shown until a session — Google or guest — exists) -->
+        <div id="welcomeOverlay" class="overlay show">
+            <div class="modal">
+                <div class="modal-icon">🧩</div>
+                <h2>Welcome to Word Cross</h2>
+                <p>Sign in to save your scores and appear on the leaderboard.</p>
+                <button id="welcomeGoogleBtn" class="btn btn-secondary">Sign in with Google</button>
+                <div class="welcome-divider"><span>or</span></div>
+                <input type="text" id="welcomeGuestUsername" maxlength="16" placeholder="Pick a guest username"
+                    class="username-input">
+                <button id="welcomeGuestBtn" class="btn btn-guest">Play as Guest</button>
+                <div id="welcomeMessage" class="message-banner"></div>
+            </div>
+        </div>
+
+        <!-- USERNAME PICKER OVERLAY (shown once, after first Google sign-in / rename) -->
+        <div id="usernameOverlay" class="overlay">
+            <div class="modal">
+                <div class="modal-icon">✍️</div>
+                <h2>Pick a username</h2>
+                <p>This is what shows on the leaderboard. Leave blank and skip for a random name.</p>
+                <input type="text" id="usernameInput" maxlength="16" placeholder="e.g. WordWizard"
+                    class="username-input" autocomplete="off" spellcheck="false">
+                <div id="usernameMessage" class="message-banner"></div>
+                <div class="modal-actions">
+                    <button id="usernameSaveBtn" class="btn btn-primary">Save Username</button>
+                    <button id="usernameSkipBtn" class="btn btn-secondary">Skip (random name)</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME OVER OVERLAY -->
+        <div id="overlay" class="overlay">
+            <div class="modal">
+                <div id="modalIcon" class="modal-icon">💀</div>
+                <h2 id="endTitle">GAME OVER</h2>
+                <p id="endText"></p>
+                <div class="modal-score">Final Score: <strong id="finalScore">0</strong></div>
+                <div class="modal-high">Best Score: <strong id="modalHighScore">0</strong></div>
+                <div class="modal-actions">
+                    <button id="restartBtn" class="btn btn-primary">TRY AGAIN</button>
+                    <button id="resultsHomeBtn" class="btn btn-secondary">HOME</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
