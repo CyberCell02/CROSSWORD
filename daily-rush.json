@@ -1,123 +1,360 @@
-const fs = require('fs');
-
-// Word pool - protiti difficulty-r jonno alada list
-const wordBank = {
-    easy: [
-        { word1: "B?LL", word2: "?PPLE", answer: "A" },
-        { word1: "S?N", word2: "B?S", answer: "U" },
-        { word1: "C?T", word2: "B?T", answer: "A" },
-        { word1: "B?D", word2: "R?D", answer: "E" },
-        { word1: "B?G", word2: "P?G", answer: "I" },
-        { word1: "C?P", word2: "N?T", answer: "U" },
-        { word1: "M?ON", word2: "O?L", answer: "O" },
-        { word1: "S?AR", word2: "?NT", answer: "A" },
-        { word1: "D?G", word2: "F?X", answer: "O" },
-        { word1: "P?N", word2: "H?N", answer: "E" }
-    ],
-    medium: [
-        { word1: "D?G", word2: "L?G", answer: "O" },
-        { word1: "F?SH", word2: "D?SH", answer: "I" },
-        { word1: "B?RD", word2: "G?RL", answer: "I" },
-        { word1: "F?RE", word2: "W?RE", answer: "I" },
-        { word1: "C?AR", word2: "B?AR", answer: "H" },
-        { word1: "L?ON", word2: "K?NG", answer: "I" },
-        { word1: "M?LK", word2: "S?LK", answer: "I" },
-        { word1: "R?SE", word2: "N?SE", answer: "O" },
-        { word1: "S?OW", word2: "C?LD", answer: "O" },
-        { word1: "W?ND", word2: "R?IN", answer: "I" }
-    ],
-    hard: [
-        { word1: "P?ZZLE", word2: "R?DDLE", answer: "I" },
-        { word1: "S?HARE", word2: "S?UARE", answer: "Q" },
-        { word1: "C?AST", word2: "O?EAN", answer: "C" },
-        { word1: "S?ORM", word2: "C?OUD", answer: "T" },
-        { word1: "B?AIN", word2: "S?ART", answer: "R" },
-        { word1: "C?AST", word2: "G?OST", answer: "H" },
-        { word1: "FL?WER", word2: "PL?NT", answer: "O" },
-        { word1: "SN?KE", word2: "T?GER", answer: "A" },
-        { word1: "S?HOOL", word2: "C?ASS", answer: "C" },
-        { word1: "P?LANET", word2: "S?ACE", answer: "L" }
+{
+  "2026-20-01": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "B?LL",
+        "word2": "?PPLE",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "B?S",
+        "answer": "U"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "D?G",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "R?D",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "P?G",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "N?T",
+        "answer": "U"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "MO?N",
+        "word2": "?WL",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "ST?R",
+        "word2": "?NT",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "W?TER",
+        "word2": "BE?CH",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "CL?CK",
+        "word2": "?CEAN",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "HO?SE",
+        "word2": "?NDER",
+        "answer": "U"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "TIG?R",
+        "word2": "?AGLE",
+        "answer": "E"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "LEM?N",
+        "word2": "?RANGE",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "GAR?EN",
+        "word2": "?RAGON",
+        "answer": "D"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "CAS?LE",
+        "word2": "?IGER",
+        "answer": "T"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "FOR?ST",
+        "word2": "?ARTH",
+        "answer": "E"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "BRI?GE",
+        "word2": "?ANCE",
+        "answer": "D"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "MIR?OR",
+        "word2": "?IVER",
+        "answer": "R"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CRY?TAL",
+        "word2": "?TORM",
+        "answer": "S"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "JAC?ET",
+        "word2": "?NIFE",
+        "answer": "K"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "PO?KET",
+        "word2": "?ASTLE",
+        "answer": "C"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CA?ERA",
+        "word2": "?AGIC",
+        "answer": "M"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "BU?TON",
+        "word2": "?ABLE",
+        "answer": "T"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SIL?ER",
+        "word2": "?ALLEY",
+        "answer": "V"
+      },
+      {
+        "round": 25,
+        "difficulty": "super_tough",
+        "word1": "KNOW?EDGE",
+        "word2": "?ABYRINTH",
+        "answer": "L"
+      }
     ]
-};
-
-// Simple pseudo-random generator date-er seed bebohar kore
-function seededRandom(seed) {
-    let x = Math.sin(seed++) * 10000;
-    return x - Math.floor(x);
+  },
+  "2026-09-29": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "R?D",
+        "answer": "E"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "P?G",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "N?T",
+        "answer": "U"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "MO?N",
+        "word2": "?WL",
+        "answer": "O"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "ST?R",
+        "word2": "?NT",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?LL",
+        "word2": "?PPLE",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "B?S",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "D?G",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "TIG?R",
+        "word2": "?AGLE",
+        "answer": "E"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "LEM?N",
+        "word2": "?RANGE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "GAR?EN",
+        "word2": "?RAGON",
+        "answer": "D"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "CAS?LE",
+        "word2": "?IGER",
+        "answer": "T"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "FOR?ST",
+        "word2": "?ARTH",
+        "answer": "E"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "W?TER",
+        "word2": "BE?CH",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "CL?CK",
+        "word2": "?CEAN",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "HO?SE",
+        "word2": "?NDER",
+        "answer": "U"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "JAC?ET",
+        "word2": "?NIFE",
+        "answer": "K"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "PO?KET",
+        "word2": "?ASTLE",
+        "answer": "C"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CA?ERA",
+        "word2": "?AGIC",
+        "answer": "M"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "BU?TON",
+        "word2": "?ABLE",
+        "answer": "T"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SIL?ER",
+        "word2": "?ALLEY",
+        "answer": "V"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "BRI?GE",
+        "word2": "?ANCE",
+        "answer": "D"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "MIR?OR",
+        "word2": "?IVER",
+        "answer": "R"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CRY?TAL",
+        "word2": "?TORM",
+        "answer": "S"
+      },
+      {
+        "round": 25,
+        "difficulty": "super_tough",
+        "word1": "KNOW?EDGE",
+        "word2": "?ABYRINTH",
+        "answer": "L"
+      }
+    ]
+  }
 }
-
-// Seeded shuffle function
-function shuffleArray(array, seed) {
-    let shuffled = [...array];
-    let currentSeed = seed;
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(seededRandom(currentSeed++) * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-}
-
-// Daily JSON generate korar function (25 levels)
-function generateDailyRush() {
-    const today = new Date().toISOString().split('T')[0];
-    
-    // Convert today's date string into a numeric seed
-    const seed = today.split('-').join('');
-    
-    // Protidi randomized nuton sequence er jonno shuffle
-    const easyWords = shuffleArray(wordBank.easy, Number(seed) + 1);
-    const mediumWords = shuffleArray(wordBank.medium, Number(seed) + 2);
-    const hardWords = shuffleArray(wordBank.hard, Number(seed) + 3);
-
-    const rounds = [];
-    let roundIndex = 1;
-
-    // Easy levels (1 - 10)
-    for (let i = 0; i < 10; i++) {
-        const item = easyWords[i % easyWords.length];
-        rounds.push({
-            round: roundIndex++,
-            difficulty: "easy",
-            word1: item.word1,
-            word2: item.word2,
-            answer: item.answer
-        });
-    }
-
-    // Medium levels (11 - 18)
-    for (let i = 0; i < 8; i++) {
-        const item = mediumWords[i % mediumWords.length];
-        rounds.push({
-            round: roundIndex++,
-            difficulty: "medium",
-            word1: item.word1,
-            word2: item.word2,
-            answer: item.answer
-        });
-    }
-
-    // Hard levels (19 - 25)
-    for (let i = 0; i < 7; i++) {
-        const item = hardWords[i % hardWords.length];
-        rounds.push({
-            round: roundIndex++,
-            difficulty: "hard",
-            word1: item.word1,
-            word2: item.word2,
-            answer: item.answer
-        });
-    }
-
-    return {
-        [today]: {
-            rounds: rounds
-        }
-    };
-}
-
-// Result generate & print
-const result = generateDailyRush();
-console.log(JSON.stringify(result, null, 2));
-
-// File-e save korar jonno:
-// fs.writeFileSync('daily_rush.json', JSON.stringify(result, null, 2));
