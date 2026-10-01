@@ -1,3 +1,36 @@
+/* App container height fix */
+.app-container {
+  width: 100%;
+  max-width: 420px;
+  height: 100dvh; /* 100vh er bodle 100dvh mobile keyboard er jonno safe */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Screen content scroll area fix */
+.screen {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 80px; /* Navigation bar er jonno pixel clearance */
+}
+
+/* Bottom navigation bar code */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  border-top: 1px solid #e0e0e0;
+}
 * {
     box-sizing: border-box;
     margin: 0;
