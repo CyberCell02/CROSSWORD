@@ -114,70 +114,7 @@
         "answer": "U"
       },
       {
-        "round": 17,
-        "difficulty": "hard",
-        "word1": "JAC?ET",
-        "word2": "?NIFE",
-        "answer": "K"
-      },
-      {
-        "round": 18,
-        "difficulty": "hard",
-        "word1": "PO?KET",
-        "word2": "?ASTLE",
-        "answer": "C"
-      },
-      {
-        "round": 19,
-        "difficulty": "hard",
-        "word1": "CA?ERA",
-        "word2": "?AGIC",
-        "answer": "M"
-      },
-      {
-        "round": 20,
-        "difficulty": "hard",
-        "word1": "BU?TON",
-        "word2": "?ABLE",
-        "answer": "T"
-      },
-      {
-        "round": 21,
-        "difficulty": "hard",
-        "word1": "SIL?ER",
-        "word2": "?ALLEY",
-        "answer": "V"
-      },
-      {
-        "round": 22,
-        "difficulty": "hard",
-        "word1": "BRI?GE",
-        "word2": "?ANCE",
-        "answer": "D"
-      },
-      {
-        "round": 23,
-        "difficulty": "hard",
-        "word1": "MIR?OR",
-        "word2": "?IVER",
-        "answer": "R"
-      },
-      {
-        "round": 24,
-        "difficulty": "hard",
-        "word1": "CRY?TAL",
-        "word2": "?TORM",
-        "answer": "S"
-      },
-      {
-        "round": 25,
-        "difficulty": "super_tough",
-        "word1": "KNOW?EDGE",
-        "word2": "?ABYRINTH",
-        "answer": "L"
-      }
-    ]
-  },
+
   "2026-10-01": {
     "rounds": [
       {
