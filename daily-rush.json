@@ -4,149 +4,5368 @@
       {
         "round": 1,
         "difficulty": "easy",
-        "word1": "FIGS",
-        "word2": "FISH",
+        "word1": "P?G",
+        "word2": "P?N",
         "answer": "A"
       },
       {
         "round": 2,
         "difficulty": "easy",
-        "word1": "PIGS",
-        "word2": "GIRL",
-        "answer": "U"
+        "word1": "J?G",
+        "word2": "J?T",
+        "answer": "O"
       },
       {
         "round": 3,
         "difficulty": "easy",
-        "word1": "ARGU",
-        "word2": "CEAS",
-        "answer": "E"
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
       },
       {
         "round": 4,
         "difficulty": "easy",
-        "word1": "CAM",
-        "word2": "CLOTH",
-        "answer": "O"
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
       },
       {
         "round": 5,
         "difficulty": "easy",
-        "word1": "HAND",
-        "word2": "RANK",
-        "answer": "I"
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
       },
       {
         "round": 6,
         "difficulty": "easy",
-        "word1": "FIG",
-        "word2": "DEBT",
+        "word1": "D?P",
+        "word2": "D?G",
         "answer": "I"
       },
       {
         "round": 7,
         "difficulty": "easy",
-        "word1": "THING",
-        "word2": "SUCH",
+        "word1": "G?N",
+        "word2": "G?T",
         "answer": "U"
       },
       {
         "round": 8,
         "difficulty": "easy",
-        "word1": "LACK",
-        "word2": "BACK",
-        "answer": "A"
+        "word1": "B?T",
+        "word2": "B?G",
+        "answer": "E"
       },
       {
         "round": 9,
-        "difficulty": "easy",
-        "word1": "SING",
-        "word2": "WANT",
-        "answer": "I"
+        "difficulty": "medium",
+        "word1": "GR?NT",
+        "word2": "SL?NT",
+        "answer": "A"
       },
       {
         "round": 10,
         "difficulty": "medium",
-        "word1": "BEST",
-        "word2": "LAST",
-        "answer": "E"
+        "word1": "P?RK",
+        "word2": "D?RK",
+        "answer": "A"
       },
       {
         "round": 11,
         "difficulty": "medium",
-        "word1": "CART",
-        "word2": "PART",
-        "answer": "A"
+        "word1": "B?ST",
+        "word2": "L?ST",
+        "answer": "E"
       },
       {
         "round": 12,
         "difficulty": "medium",
-        "word1": "BOLD",
-        "word2": "COLD",
-        "answer": "O"
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
       },
       {
         "round": 13,
         "difficulty": "medium",
-        "word1": "DARK",
-        "word2": "PARK",
+        "word1": "H?ND",
+        "word2": "B?ND",
         "answer": "A"
       },
       {
         "round": 14,
         "difficulty": "medium",
-        "word1": "MIND",
-        "word2": "KIND",
+        "word1": "W?ND",
+        "word2": "F?ND",
         "answer": "I"
       },
       {
         "round": 15,
         "difficulty": "medium",
-        "word1": "ROAD",
-        "word2": "LOAD",
+        "word1": "CL?CK",
+        "word2": "BL?CK",
         "answer": "O"
       },
       {
         "round": 16,
-        "difficulty": "hard",
-        "word1": "BRAVE",
-        "word2": "GRAVE",
-        "answer": "A"
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
       },
       {
         "round": 17,
         "difficulty": "hard",
-        "word1": "SHARK",
-        "word2": "SMART",
+        "word1": "BL?NK",
+        "word2": "PL?NK",
         "answer": "A"
       },
       {
         "round": 18,
         "difficulty": "hard",
-        "word1": "CLOUD",
-        "word2": "PROUD",
-        "answer": "O"
+        "word1": "CR?ST",
+        "word2": "TR?ST",
+        "answer": "U"
       },
       {
         "round": 19,
         "difficulty": "hard",
-        "word1": "LIGHT",
-        "word2": "NIGHT",
-        "answer": "I"
+        "word1": "FL?RE",
+        "word2": "SH?RE",
+        "answer": "A"
       },
       {
         "round": 20,
         "difficulty": "hard",
-        "word1": "PLANT",
-        "word2": "GRANT",
+        "word1": "BL?ZE",
+        "word2": "GL?ZE",
         "answer": "A"
       },
       {
         "round": 21,
         "difficulty": "hard",
-        "word1": "DREAM",
-        "word2": "STEAM",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "WH?RE",
+        "word2": "TH?RE",
         "answer": "E"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "QU?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-04": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "B?Y",
+        "word2": "B?X",
+        "answer": "O"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "M?T",
+        "word2": "M?P",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "P?RK",
+        "word2": "D?RK",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "SN?P",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "SC?LE",
+        "word2": "ST?LE",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "B?LD",
+        "word2": "C?LD",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "F?MBLE",
+        "word2": "T?MBLE",
+        "answer": "U"
+      }
+    ]
+  },
+  "2026-10-05": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "K?T",
+        "word2": "K?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "G?T",
+        "word2": "G?B",
+        "answer": "O"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "A?D",
+        "word2": "A?M",
+        "answer": "I"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "S?P",
+        "answer": "U"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SP?NK",
+        "word2": "FR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "BL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SC?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "GR?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "B?UNCE",
+        "word2": "P?UNCE",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-06": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "R?B",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "F?N",
+        "word2": "F?T",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "Z?P",
+        "word2": "Z?T",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "L?G",
+        "word2": "L?P",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "Y?M",
+        "word2": "Y?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "H?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "M?ND",
+        "word2": "K?ND",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "G?LD",
+        "word2": "B?LD",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "GL?SS",
+        "word2": "CL?SS",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "GL?BE",
+        "word2": "PR?BE",
+        "answer": "O"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "WH?RE",
+        "word2": "TH?RE",
+        "answer": "E"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "BR?DGE",
+        "word2": "FR?DGE",
+        "answer": "I"
+      }
+    ]
+  },
+  "2026-10-07": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "S?G",
+        "word2": "S?T",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "A?D",
+        "word2": "A?M",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "G?N",
+        "word2": "G?T",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "P?T",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "W?NG",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "KN?CK",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SM?LE",
+        "word2": "WH?LE",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "TH?ME",
+        "word2": "TH?SE",
+        "answer": "E"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "F?MBLE",
+        "word2": "T?MBLE",
+        "answer": "U"
+      }
+    ]
+  },
+  "2026-10-08": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "F?B",
+        "word2": "F?N",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "R?B",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "S?P",
+        "answer": "U"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "SP?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "H?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "ST?NE",
+        "word2": "SC?NE",
+        "answer": "O"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "GR?CE",
+        "word2": "BR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SM?LE",
+        "word2": "WH?LE",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SC?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SQU?SH",
+        "word2": "SL?SH",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-09": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "B?T",
+        "word2": "B?G",
+        "answer": "E"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "T?P",
+        "word2": "T?N",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "S?G",
+        "word2": "S?T",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "M?T",
+        "word2": "M?P",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "ST?R",
+        "word2": "SP?R",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "C?MP",
+        "word2": "D?MP",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "SC?RE",
+        "word2": "ST?RE",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "L?MP",
+        "word2": "R?MP",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "GL?SS",
+        "word2": "CL?SS",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SN?RK",
+        "word2": "SH?RK",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "QU?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-10": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "S?G",
+        "word2": "S?T",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "F?B",
+        "word2": "F?N",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "C?T",
+        "answer": "U"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "W?G",
+        "word2": "W?N",
+        "answer": "I"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "SC?RE",
+        "word2": "ST?RE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "FL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "SH?P",
+        "word2": "CH?P",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SP?NK",
+        "word2": "FR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "FL?RE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SP?RE",
+        "word2": "ST?RE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "STR?KE",
+        "word2": "SPR?NT",
+        "answer": "I"
+      }
+    ]
+  },
+  "2026-10-11": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?P",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "P?T",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?P",
+        "word2": "H?T",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "H?N",
+        "word2": "H?M",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "A?D",
+        "word2": "A?M",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "B?T",
+        "word2": "B?N",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "CL?NE",
+        "word2": "BL?NE",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "S?NK",
+        "word2": "W?NK",
+        "answer": "I"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "B?NK",
+        "word2": "T?NK",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "K?NG",
+        "word2": "S?NG",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "B?ST",
+        "word2": "L?ST",
+        "answer": "E"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "GR?CE",
+        "word2": "BR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "GL?SS",
+        "word2": "CL?SS",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "FL?RE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "BR?DGE",
+        "word2": "FR?DGE",
+        "answer": "I"
+      }
+    ]
+  },
+  "2026-10-12": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?P",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "K?T",
+        "word2": "K?N",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "H?N",
+        "word2": "H?M",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "M?T",
+        "word2": "M?P",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?T",
+        "word2": "B?N",
+        "answer": "U"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "D?G",
+        "word2": "D?T",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "M?ND",
+        "word2": "K?ND",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "ST?ND",
+        "word2": "BR?ND",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "L?MP",
+        "word2": "R?MP",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SP?RE",
+        "word2": "ST?RE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "WH?RE",
+        "word2": "TH?RE",
+        "answer": "E"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SN?RK",
+        "word2": "SH?RK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "B?UNCE",
+        "word2": "P?UNCE",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-13": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "K?T",
+        "word2": "K?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "L?G",
+        "word2": "L?P",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "F?N",
+        "word2": "F?T",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "W?G",
+        "word2": "W?N",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "R?N",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "KN?CK",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "DR?NK",
+        "word2": "SH?NK",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "GR?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "BR?CE",
+        "word2": "TR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SCR?EN",
+        "word2": "GR?EN",
+        "answer": "E"
+      }
+    ]
+  },
+  "2026-10-14": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "R?N",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "Z?P",
+        "word2": "Z?T",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "M?P",
+        "word2": "M?N",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "G?T",
+        "word2": "G?B",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "KN?CK",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "ST?R",
+        "word2": "SP?R",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "BR?CE",
+        "word2": "TR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SN?RK",
+        "word2": "SH?RK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SP?RE",
+        "word2": "ST?RE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SL?NK",
+        "word2": "TH?NK",
+        "answer": "I"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SPL?SH",
+        "word2": "FL?SH",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-15": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "C?T",
+        "answer": "U"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?P",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "B?G",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "T?N",
+        "word2": "T?P",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "R?B",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "GR?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "ST?ND",
+        "word2": "BR?ND",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "B?LD",
+        "word2": "C?LD",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "BL?ZE",
+        "word2": "GL?ZE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "GR?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "QU?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-16": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "A?D",
+        "word2": "A?M",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "B?Y",
+        "word2": "B?X",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?N",
+        "word2": "H?M",
+        "answer": "E"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "G?N",
+        "word2": "G?T",
+        "answer": "U"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "R?B",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "SL?P",
+        "word2": "WH?P",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "SP?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CR?WN",
+        "word2": "BR?WN",
+        "answer": "O"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "BL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SC?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "BR?DGE",
+        "word2": "FR?DGE",
+        "answer": "I"
+      }
+    ]
+  },
+  "2026-10-17": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "A?D",
+        "word2": "A?M",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "F?B",
+        "word2": "F?N",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "M?P",
+        "word2": "M?N",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?T",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "L?P",
+        "word2": "L?D",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "B?LD",
+        "word2": "C?LD",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "FL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "SL?P",
+        "word2": "WH?P",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "W?ND",
+        "word2": "F?ND",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "W?NG",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "FL?RE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SL?NK",
+        "word2": "TH?NK",
+        "answer": "I"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SN?RK",
+        "word2": "SH?RK",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "GR?VEL",
+        "word2": "TR?VEL",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-18": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "J?G",
+        "word2": "J?T",
+        "answer": "O"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "H?N",
+        "word2": "H?M",
+        "answer": "E"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "P?N",
+        "word2": "P?T",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "T?N",
+        "word2": "T?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "B?Y",
+        "word2": "B?X",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "F?LD",
+        "word2": "H?LD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "K?NG",
+        "word2": "S?NG",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "ST?R",
+        "word2": "SP?R",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "W?NG",
+        "answer": "I"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "M?ND",
+        "word2": "K?ND",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "BL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "BL?ZE",
+        "word2": "GL?ZE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "GR?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "STR?NG",
+        "word2": "SPR?NG",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-19": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "T?N",
+        "word2": "T?P",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "K?T",
+        "word2": "K?N",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "Y?M",
+        "word2": "Y?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?P",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "SL?P",
+        "word2": "WH?P",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "FL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "S?NK",
+        "word2": "W?NK",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "GR?CE",
+        "word2": "BR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "FL?NK",
+        "word2": "SL?NK",
+        "answer": "U"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "GL?BE",
+        "word2": "PR?BE",
+        "answer": "O"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SC?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "B?UNCE",
+        "word2": "P?UNCE",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-20": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "M?T",
+        "word2": "M?P",
+        "answer": "O"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "H?N",
+        "word2": "H?M",
+        "answer": "E"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?P",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?Y",
+        "word2": "B?X",
+        "answer": "O"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "T?P",
+        "word2": "T?N",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "G?LD",
+        "word2": "B?LD",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "B?RD",
+        "word2": "H?RD",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "FL?NK",
+        "word2": "SL?NK",
+        "answer": "U"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "GL?RE",
+        "word2": "SC?RE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SPL?SH",
+        "word2": "FL?SH",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-21": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "R?D",
+        "word2": "R?T",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "R?N",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?T",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "T?P",
+        "word2": "T?N",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "C?MP",
+        "word2": "D?MP",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "SH?P",
+        "word2": "CH?P",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "SP?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "BR?CE",
+        "word2": "TR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SPR?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-22": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "G?T",
+        "word2": "G?B",
+        "answer": "O"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "D?G",
+        "word2": "D?T",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "L?P",
+        "word2": "L?D",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "R?D",
+        "word2": "R?T",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "F?B",
+        "word2": "F?N",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "B?RD",
+        "word2": "H?RD",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "CL?CK",
+        "word2": "BL?CK",
+        "answer": "O"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "B?NK",
+        "word2": "T?NK",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "F?LD",
+        "word2": "H?LD",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "B?LD",
+        "word2": "C?LD",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "SP?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "BL?ZE",
+        "word2": "GL?ZE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "FL?NG",
+        "word2": "CL?NG",
+        "answer": "U"
+      }
+    ]
+  },
+  "2026-10-23": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "S?N",
+        "word2": "S?P",
+        "answer": "U"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "B?Y",
+        "word2": "B?X",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "B?D",
+        "word2": "B?G",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "DR?NK",
+        "word2": "SH?NK",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "M?ND",
+        "word2": "K?ND",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "TR?E",
+        "word2": "FR?E",
+        "answer": "E"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "SC?RE",
+        "word2": "ST?RE",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CL?UD",
+        "word2": "PR?UD",
+        "answer": "O"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "TH?ME",
+        "word2": "TH?SE",
+        "answer": "E"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "QU?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-24": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "L?G",
+        "word2": "L?P",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "F?N",
+        "word2": "F?T",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "C?T",
+        "answer": "U"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "P?N",
+        "word2": "P?T",
+        "answer": "E"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "M?P",
+        "word2": "M?N",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "S?LD",
+        "word2": "T?LD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "G?LD",
+        "word2": "B?LD",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "B?NK",
+        "word2": "T?NK",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "C?MP",
+        "word2": "D?MP",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "SN?P",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "CL?NE",
+        "word2": "BL?NE",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "GL?SS",
+        "word2": "CL?SS",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SL?NK",
+        "word2": "TH?NK",
+        "answer": "I"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "CR?WN",
+        "word2": "BR?WN",
+        "answer": "O"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SP?NK",
+        "word2": "FR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "F?MBLE",
+        "word2": "T?MBLE",
+        "answer": "U"
+      }
+    ]
+  },
+  "2026-10-25": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "T?G",
+        "word2": "T?N",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "W?G",
+        "word2": "W?N",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "G?T",
+        "word2": "G?B",
+        "answer": "O"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "FL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "C?MP",
+        "word2": "D?MP",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "B?NK",
+        "word2": "T?NK",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "SN?P",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "BL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SM?LE",
+        "word2": "WH?LE",
+        "answer": "I"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "FL?ME",
+        "word2": "BL?ME",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "PR?DE",
+        "word2": "BR?DE",
+        "answer": "I"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SC?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "CR?WN",
+        "word2": "BR?WN",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "TR?NCE",
+        "word2": "PR?NCE",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-26": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "C?T",
+        "answer": "U"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "G?N",
+        "word2": "G?T",
+        "answer": "U"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "K?T",
+        "word2": "K?N",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "H?T",
+        "word2": "H?P",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "M?T",
+        "word2": "M?P",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "SC?LE",
+        "word2": "ST?LE",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "B?RD",
+        "word2": "H?RD",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "DR?NK",
+        "word2": "SH?NK",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "TR?E",
+        "word2": "FR?E",
+        "answer": "E"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "SL?NT",
+        "word2": "PL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "FL?KE",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "GL?SS",
+        "word2": "CL?SS",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SPL?SH",
+        "word2": "FL?SH",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-27": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "T?P",
+        "word2": "T?N",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "G?T",
+        "word2": "G?B",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "S?G",
+        "word2": "S?T",
+        "answer": "A"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "M?P",
+        "word2": "M?N",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "F?N",
+        "word2": "F?T",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "C?MP",
+        "word2": "D?MP",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "SC?LE",
+        "word2": "ST?LE",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "SC?RE",
+        "word2": "ST?RE",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "F?RM",
+        "word2": "W?RM",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "PL?NT",
+        "word2": "SL?NT",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "L?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "GL?BE",
+        "word2": "PR?BE",
+        "answer": "O"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "FL?SH",
+        "word2": "CL?SH",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "CR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "THR?WN",
+        "word2": "CR?WN",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-28": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "C?T",
+        "word2": "C?P",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "T?P",
+        "word2": "T?N",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?T",
+        "answer": "O"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "W?T",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "P?G",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "R?B",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "S?NK",
+        "word2": "W?NK",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "CL?NE",
+        "word2": "BL?NE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "H?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "DR?P",
+        "word2": "CR?P",
+        "answer": "O"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "SC?RE",
+        "word2": "ST?RE",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "P?RK",
+        "word2": "D?RK",
+        "answer": "A"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "ST?NE",
+        "word2": "SC?NE",
+        "answer": "O"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CR?ST",
+        "word2": "TR?ST",
+        "answer": "U"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "TH?ME",
+        "word2": "TH?SE",
+        "answer": "E"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "FL?NK",
+        "word2": "SL?NK",
+        "answer": "U"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "WH?RE",
+        "word2": "TH?RE",
+        "answer": "E"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "SH?RK",
+        "word2": "SP?RK",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "SPR?UT",
+        "word2": "TR?UT",
+        "answer": "O"
+      }
+    ]
+  },
+  "2026-10-29": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "Z?P",
+        "word2": "Z?T",
+        "answer": "I"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "B?T",
+        "word2": "B?N",
+        "answer": "U"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "N?B",
+        "word2": "N?P",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "L?P",
+        "word2": "L?D",
+        "answer": "I"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "P?T",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "J?G",
+        "word2": "J?T",
+        "answer": "O"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "J?B",
+        "word2": "J?Y",
+        "answer": "O"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "R?NK",
+        "word2": "S?NK",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "WH?LE",
+        "word2": "SM?LE",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "GR?P",
+        "word2": "TR?P",
+        "answer": "I"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "TR?E",
+        "word2": "FR?E",
+        "answer": "E"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "ST?R",
+        "word2": "SP?R",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "H?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "CH?SE",
+        "word2": "PH?SE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "CH?RM",
+        "word2": "AL?RM",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "WH?TE",
+        "word2": "WR?TE",
+        "answer": "I"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?KE",
+        "word2": "SH?RE",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "TH?ME",
+        "word2": "TH?SE",
+        "answer": "E"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SP?RE",
+        "word2": "ST?RE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "CR?ST",
+        "word2": "TR?ST",
+        "answer": "U"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "WH?RE",
+        "word2": "TH?RE",
+        "answer": "E"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "GR?VEL",
+        "word2": "TR?VEL",
+        "answer": "A"
+      }
+    ]
+  },
+  "2026-10-30": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "FL?G",
+        "word2": "FL?P",
+        "answer": "A"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "W?G",
+        "word2": "W?N",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "L?P",
+        "word2": "L?D",
+        "answer": "I"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?T",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "C?P",
+        "word2": "C?T",
+        "answer": "U"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "H?ND",
+        "word2": "B?ND",
+        "answer": "A"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "GL?DE",
+        "word2": "BL?DE",
+        "answer": "A"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "L?NK",
+        "word2": "P?NK",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "SP?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "FL?NK",
+        "word2": "PL?NK",
+        "answer": "A"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "SH?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "SH?FT",
+        "word2": "SW?FT",
+        "answer": "I"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "CR?NK",
+        "word2": "PR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "GR?DE",
+        "word2": "TR?DE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "SM?LE",
+        "word2": "WH?LE",
+        "answer": "I"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "FL?NGE",
+        "word2": "PL?NGE",
+        "answer": "U"
+      }
+    ]
+  },
+  "2026-10-31": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "R?D",
+        "word2": "R?T",
+        "answer": "A"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "P?T",
+        "word2": "P?N",
+        "answer": "I"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "D?P",
+        "word2": "D?G",
+        "answer": "I"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "R?N",
+        "word2": "R?G",
+        "answer": "U"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "V?N",
+        "word2": "V?T",
+        "answer": "A"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "CL?P",
+        "word2": "CL?M",
+        "answer": "A"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "M?P",
+        "word2": "M?N",
+        "answer": "A"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "Y?M",
+        "word2": "Y?P",
+        "answer": "A"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "M?LK",
+        "word2": "S?LK",
+        "answer": "I"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "F?SH",
+        "word2": "D?SH",
+        "answer": "I"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "B?RD",
+        "word2": "H?RD",
+        "answer": "A"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "GL?DE",
+        "word2": "BL?DE",
+        "answer": "A"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "R?AD",
+        "word2": "L?AD",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "F?LD",
+        "word2": "H?LD",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "S?NG",
+        "answer": "A"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "TR?IN",
+        "word2": "BR?IN",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "SP?NK",
+        "word2": "FR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "CR?FT",
+        "word2": "DR?FT",
+        "answer": "A"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "SH?NE",
+        "word2": "WH?NE",
+        "answer": "I"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "TR?CE",
+        "word2": "PL?CE",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "L?GHT",
+        "word2": "N?GHT",
+        "answer": "I"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "GR?CE",
+        "word2": "BR?CE",
+        "answer": "A"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "STRE?CH",
+        "word2": "BREA?H",
+        "answer": "T"
+      }
+    ]
+  },
+  "2026-11-01": {
+    "rounds": [
+      {
+        "round": 1,
+        "difficulty": "easy",
+        "word1": "W?D",
+        "word2": "W?B",
+        "answer": "E"
+      },
+      {
+        "round": 2,
+        "difficulty": "easy",
+        "word1": "C?D",
+        "word2": "C?T",
+        "answer": "O"
+      },
+      {
+        "round": 3,
+        "difficulty": "easy",
+        "word1": "F?N",
+        "word2": "F?T",
+        "answer": "A"
+      },
+      {
+        "round": 4,
+        "difficulty": "easy",
+        "word1": "C?B",
+        "word2": "C?G",
+        "answer": "O"
+      },
+      {
+        "round": 5,
+        "difficulty": "easy",
+        "word1": "S?T",
+        "word2": "S?T",
+        "answer": "O"
+      },
+      {
+        "round": 6,
+        "difficulty": "easy",
+        "word1": "B?G",
+        "word2": "B?D",
+        "answer": "I"
+      },
+      {
+        "round": 7,
+        "difficulty": "easy",
+        "word1": "P?N",
+        "word2": "P?T",
+        "answer": "E"
+      },
+      {
+        "round": 8,
+        "difficulty": "easy",
+        "word1": "B?T",
+        "word2": "B?N",
+        "answer": "U"
+      },
+      {
+        "round": 9,
+        "difficulty": "medium",
+        "word1": "B?LD",
+        "word2": "C?LD",
+        "answer": "O"
+      },
+      {
+        "round": 10,
+        "difficulty": "medium",
+        "word1": "P?RK",
+        "word2": "D?RK",
+        "answer": "A"
+      },
+      {
+        "round": 11,
+        "difficulty": "medium",
+        "word1": "ST?CK",
+        "word2": "CL?CK",
+        "answer": "U"
+      },
+      {
+        "round": 12,
+        "difficulty": "medium",
+        "word1": "TH?NK",
+        "word2": "SL?NK",
+        "answer": "I"
+      },
+      {
+        "round": 13,
+        "difficulty": "medium",
+        "word1": "C?NE",
+        "word2": "B?NE",
+        "answer": "O"
+      },
+      {
+        "round": 14,
+        "difficulty": "medium",
+        "word1": "C?RN",
+        "word2": "H?RN",
+        "answer": "O"
+      },
+      {
+        "round": 15,
+        "difficulty": "medium",
+        "word1": "PH?NE",
+        "word2": "ST?NE",
+        "answer": "O"
+      },
+      {
+        "round": 16,
+        "difficulty": "medium",
+        "word1": "R?NG",
+        "word2": "W?NG",
+        "answer": "I"
+      },
+      {
+        "round": 17,
+        "difficulty": "hard",
+        "word1": "BR?VE",
+        "word2": "GR?VE",
+        "answer": "A"
+      },
+      {
+        "round": 18,
+        "difficulty": "hard",
+        "word1": "PL?TE",
+        "word2": "SL?TE",
+        "answer": "A"
+      },
+      {
+        "round": 19,
+        "difficulty": "hard",
+        "word1": "TH?ME",
+        "word2": "TH?SE",
+        "answer": "E"
+      },
+      {
+        "round": 20,
+        "difficulty": "hard",
+        "word1": "DR?AM",
+        "word2": "ST?AM",
+        "answer": "E"
+      },
+      {
+        "round": 21,
+        "difficulty": "hard",
+        "word1": "B?AST",
+        "word2": "F?AST",
+        "answer": "E"
+      },
+      {
+        "round": 22,
+        "difficulty": "hard",
+        "word1": "SP?NK",
+        "word2": "FR?NK",
+        "answer": "A"
+      },
+      {
+        "round": 23,
+        "difficulty": "hard",
+        "word1": "GL?RE",
+        "word2": "SC?RE",
+        "answer": "A"
+      },
+      {
+        "round": 24,
+        "difficulty": "hard",
+        "word1": "GL?BE",
+        "word2": "PR?BE",
+        "answer": "O"
+      },
+      {
+        "round": 25,
+        "difficulty": "supertough",
+        "word1": "CR?NGE",
+        "word2": "FR?NGE",
+        "answer": "I"
       }
     ]
   }
