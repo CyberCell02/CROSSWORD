@@ -1,4 +1,4 @@
-{ 
+{
   "2026-10-03": {
     "rounds": [
       {
@@ -53,128 +53,129 @@
       {
         "round": 8,
         "difficulty": "easy",
-        "word1": "SURG?",
-        "word2": "DET?R",
-        "answer": "E"
+        "word1": "L?CK",
+        "word2": "B?CK",
+        "answer": "A"
       },
       {
         "round": 9,
-        "difficulty": "medium",
-        "word1": "REF?SED",
-        "word2": "NERVO?S",
-        "answer": "U"
+        "difficulty": "easy",
+        "word1": "S?NG",
+        "word2": "M?NT",
+        "answer": "I"
       },
       {
         "round": 10,
         "difficulty": "medium",
-        "word1": "ROAS?ED",
-        "word2": "RHY?HMS",
-        "answer": "T"
+        "word1": "B?ST",
+        "word2": "L?ST",
+        "answer": "E"
       },
       {
         "round": 11,
         "difficulty": "medium",
-        "word1": "BANGE?",
-        "word2": "?IRECTS",
-        "answer": "D"
+        "word1": "C?RT",
+        "word2": "P?RT",
+        "answer": "A"
       },
       {
         "round": 12,
         "difficulty": "medium",
-        "word1": "?BJECTS",
-        "word2": "BL?ND",
-        "answer": "O"
+        "word1": "F?ST",
+        "word2": "L?ST",
+        "answer": "I"
       },
       {
         "round": 13,
         "difficulty": "medium",
-        "word1": "B?ING",
-        "word2": "B?NDS",
-        "answer": "E"
+        "word1": "M?ST",
+        "word2": "D?ST",
+        "answer": "U"
       },
       {
         "round": 14,
         "difficulty": "medium",
-        "word1": "DE?KTOP",
-        "word2": "SEA?ONS",
-        "answer": "S"
+        "word1": "G?FT",
+        "word2": "L?FT",
+        "answer": "I"
       },
       {
         "round": 15,
         "difficulty": "medium",
-        "word1": "MOS?IC",
-        "word2": "TROJ?N",
-        "answer": "A"
+        "word1": "H?NT",
+        "word2": "M?NT",
+        "answer": "U"
       },
       {
         "round": 16,
         "difficulty": "medium",
-        "word1": "COMI?G",
-        "word2": "ROOTI?G",
-        "answer": "N"
+        "word1": "S?ND",
+        "word2": "L?ND",
+        "answer": "A"
       },
       {
         "round": 17,
-        "difficulty": "hard",
-        "word1": "?LENDED",
-        "word2": "?OOKER",
-        "answer": "B"
+        "difficulty": "medium",
+        "word1": "W?ND",
+        "word2": "F?ND",
+        "answer": "I"
       },
       {
         "round": 18,
         "difficulty": "hard",
-        "word1": "ASTH?A",
-        "word2": "SWAR?",
-        "answer": "M"
+        "word1": "B?ND",
+        "word2": "P?ND",
+        "answer": "O"
       },
       {
         "round": 19,
         "difficulty": "hard",
-        "word1": "A?PEAR",
-        "word2": "IM?ROVE",
-        "answer": "P"
+        "word1": "C?RD",
+        "word2": "H?RD",
+        "answer": "A"
       },
       {
         "round": 20,
         "difficulty": "hard",
-        "word1": "DA?TON",
-        "word2": "FANTAS?",
-        "answer": "Y"
+        "word1": "W?RD",
+        "word2": "L?RD",
+        "answer": "O"
       },
       {
         "round": 21,
         "difficulty": "hard",
-        "word1": "I?NATE",
-        "word2": "SPO?SOR",
-        "answer": "N"
+        "word1": "B?RN",
+        "word2": "T?RN",
+        "answer": "U"
       },
       {
         "round": 22,
         "difficulty": "hard",
-        "word1": "VIO?ATED",
-        "word2": "SMI?EY",
-        "answer": "L"
+        "word1": "F?RN",
+        "word2": "C?RN",
+        "answer": "O"
       },
       {
         "round": 23,
         "difficulty": "hard",
-        "word1": "RE?ALL",
-        "word2": "E?LIPSE",
-        "answer": "C"
+        "word1": "P?RK",
+        "word2": "D?RK",
+        "answer": "A"
       },
       {
         "round": 24,
         "difficulty": "hard",
-        "word1": "DIAME?ER",
-        "word2": "PE?ERS",
-        "answer": "T"
+        "word1": "M?RK",
+        "word2": "B?RK",
+        "answer": "A"
       },
       {
         "round": 25,
-        "difficulty": "super_tough",
-        "word1": "?OYFRIENDS",
-        "word2": "SU?STANTIAL",
-        "answer": "B"
+        "difficulty": "hard",
+        "word1": "L?NK",
+        "word2": "S?NK",
+        "answer": "I"
       }
     ]
-  },
+  }
+}
