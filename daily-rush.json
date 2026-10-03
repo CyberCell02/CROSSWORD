@@ -4,177 +4,149 @@
       {
         "round": 1,
         "difficulty": "easy",
-        "word1": "T?GS",
-        "word2": "B?SH",
+        "word1": "FIGS",
+        "word2": "FISH",
         "answer": "A"
       },
       {
         "round": 2,
         "difficulty": "easy",
-        "word1": "P?TS",
-        "word2": "?GH",
+        "word1": "PIGS",
+        "word2": "GIRL",
         "answer": "U"
       },
       {
         "round": 3,
         "difficulty": "easy",
-        "word1": "ARGU?",
-        "word2": "CEAS?",
+        "word1": "ARGU",
+        "word2": "CEAS",
         "answer": "E"
       },
       {
         "round": 4,
         "difficulty": "easy",
-        "word1": "C?M",
-        "word2": "CL?TH",
+        "word1": "CAM",
+        "word2": "CLOTH",
         "answer": "O"
       },
       {
         "round": 5,
         "difficulty": "easy",
-        "word1": "RA?D",
-        "word2": "R?NK",
+        "word1": "HAND",
+        "word2": "RANK",
         "answer": "I"
       },
       {
         "round": 6,
         "difficulty": "easy",
-        "word1": "F?G",
-        "word2": "DEB?T",
+        "word1": "FIG",
+        "word2": "DEBT",
         "answer": "I"
       },
       {
         "round": 7,
         "difficulty": "easy",
-        "word1": "TH?G",
-        "word2": "S?CH",
+        "word1": "THING",
+        "word2": "SUCH",
         "answer": "U"
       },
       {
         "round": 8,
         "difficulty": "easy",
-        "word1": "L?CK",
-        "word2": "B?CK",
+        "word1": "LACK",
+        "word2": "BACK",
         "answer": "A"
       },
       {
         "round": 9,
         "difficulty": "easy",
-        "word1": "S?NG",
-        "word2": "M?NT",
+        "word1": "SING",
+        "word2": "WANT",
         "answer": "I"
       },
       {
         "round": 10,
         "difficulty": "medium",
-        "word1": "B?ST",
-        "word2": "L?ST",
+        "word1": "BEST",
+        "word2": "LAST",
         "answer": "E"
       },
       {
         "round": 11,
         "difficulty": "medium",
-        "word1": "C?RT",
-        "word2": "P?RT",
+        "word1": "CART",
+        "word2": "PART",
         "answer": "A"
       },
       {
         "round": 12,
         "difficulty": "medium",
-        "word1": "F?ST",
-        "word2": "L?ST",
-        "answer": "I"
+        "word1": "BOLD",
+        "word2": "COLD",
+        "answer": "O"
       },
       {
         "round": 13,
         "difficulty": "medium",
-        "word1": "M?ST",
-        "word2": "D?ST",
-        "answer": "U"
+        "word1": "DARK",
+        "word2": "PARK",
+        "answer": "A"
       },
       {
         "round": 14,
         "difficulty": "medium",
-        "word1": "G?FT",
-        "word2": "L?FT",
+        "word1": "MIND",
+        "word2": "KIND",
         "answer": "I"
       },
       {
         "round": 15,
         "difficulty": "medium",
-        "word1": "H?NT",
-        "word2": "M?NT",
-        "answer": "U"
+        "word1": "ROAD",
+        "word2": "LOAD",
+        "answer": "O"
       },
       {
         "round": 16,
-        "difficulty": "medium",
-        "word1": "S?ND",
-        "word2": "L?ND",
+        "difficulty": "hard",
+        "word1": "BRAVE",
+        "word2": "GRAVE",
         "answer": "A"
       },
       {
         "round": 17,
-        "difficulty": "medium",
-        "word1": "W?ND",
-        "word2": "F?ND",
-        "answer": "I"
+        "difficulty": "hard",
+        "word1": "SHARK",
+        "word2": "SMART",
+        "answer": "A"
       },
       {
         "round": 18,
         "difficulty": "hard",
-        "word1": "B?ND",
-        "word2": "P?ND",
+        "word1": "CLOUD",
+        "word2": "PROUD",
         "answer": "O"
       },
       {
         "round": 19,
         "difficulty": "hard",
-        "word1": "C?RD",
-        "word2": "H?RD",
-        "answer": "A"
+        "word1": "LIGHT",
+        "word2": "NIGHT",
+        "answer": "I"
       },
       {
         "round": 20,
         "difficulty": "hard",
-        "word1": "W?RD",
-        "word2": "L?RD",
-        "answer": "O"
+        "word1": "PLANT",
+        "word2": "GRANT",
+        "answer": "A"
       },
       {
         "round": 21,
         "difficulty": "hard",
-        "word1": "B?RN",
-        "word2": "T?RN",
-        "answer": "U"
-      },
-      {
-        "round": 22,
-        "difficulty": "hard",
-        "word1": "F?RN",
-        "word2": "C?RN",
-        "answer": "O"
-      },
-      {
-        "round": 23,
-        "difficulty": "hard",
-        "word1": "P?RK",
-        "word2": "D?RK",
-        "answer": "A"
-      },
-      {
-        "round": 24,
-        "difficulty": "hard",
-        "word1": "M?RK",
-        "word2": "B?RK",
-        "answer": "A"
-      },
-      {
-        "round": 25,
-        "difficulty": "hard",
-        "word1": "L?NK",
-        "word2": "S?NK",
-        "answer": "I"
+        "word1": "DREAM",
+        "word2": "STEAM",
+        "answer": "E"
       }
     ]
   }
